@@ -60,7 +60,7 @@ module OmniAuth
         end
         
         verifier = request.params['code']
-        @access_token = client.web_server.get_access_token(verifier, :redirect_uri => callback_url)
+        @access_token = client.web_server.get_access_token(verifier, {:redirect_uri => callback_url}.merge(options))
         super
       rescue ::OAuth2::HTTPError, ::OAuth2::AccessDenied, CallbackError => e
         fail!(:invalid_credentials, e)
