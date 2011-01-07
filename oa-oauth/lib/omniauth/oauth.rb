@@ -11,6 +11,7 @@ module OmniAuth
     autoload :GitHub,             'omniauth/strategies/github'
     autoload :ThirtySevenSignals, 'omniauth/strategies/thirty_seven_signals'
     autoload :Foursquare,         'omniauth/strategies/foursquare'
+    autoload :FoursquareV2,       'omniauth/strategies/foursquare_v2'
     autoload :Gowalla,            'omniauth/strategies/gowalla'
     autoload :Identica,           'omniauth/strategies/identica'
     autoload :TripIt,             'omniauth/strategies/trip_it'
